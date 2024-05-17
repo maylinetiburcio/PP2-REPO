@@ -312,6 +312,7 @@ section{
     padding: 20% 10% 10% 5%;
     color: var(--text-color);
     margin: 0;
+    
 
 }
 
@@ -355,13 +356,20 @@ section{
     height: 50vh;  
     align-self: center;
     border-radius: 10px;  
-    box-shadow: 0 0 15px red;
-  
-    
+    box-shadow: 0 0 15px red;    
 }
+
+.aboutus-img img:hover {
+    transform: scale(1.1) translateY(3px);
+    transition: all .2s ease-in-out;
+}
+    
+
 .aboutus-img {
     padding-bottom: 20%;
     padding-top: 0;
+    border-radius: 10px;
+    
     
 }
 
