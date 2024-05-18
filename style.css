@@ -253,16 +253,16 @@ section{
 
 
 .aboutus-img1 {
-    padding-top: 17%;
+    padding-top: 23%;
     border-radius: 10px;   
-    padding-bottom:5% ;     
+    padding-bottom: 5%;     
 }
 
 
 .aboutus-img1 img{
     max-width: 100%;
     width: 85%;
-    height: 70vh;  
+    height: 50vh;  
     align-self: center;
     border-radius: 10px;  
     box-shadow: 0 0 15px red;
@@ -299,13 +299,14 @@ section{
 }
 
 .aboutus-img {
-    padding-bottom: 20%;
-    
+    padding-bottom: 15%;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 
 .aboutus-img img {
-    max-width: 100%;
+    max-width: 1000%;
     width: 100%;
     height: 50vh;  
     align-self: center;
@@ -379,7 +380,7 @@ section{
 }
 
 
-footer{
+/* footer{
     background-color: var(--bg-color);
     color: #fff;
     text-align: center;
@@ -390,9 +391,8 @@ footer{
     bottom: 0;
     left: 0;
     border-top: 2px solid var(--main-color);
-    
 
-}
+} */
 
 
 @media (max-width: 1560px) {
@@ -417,6 +417,12 @@ footer{
     }   
 }
 
+@media (max-width: 1000px){
+    .aboutus-img1 {
+        padding-top: 30%;
+    }  
+}
+
 
 @media (max-width: 980px) {
     section{
@@ -425,11 +431,20 @@ footer{
     .home-logo{
         display: none;
     }
-    .aboutus-img1 {
-        padding-top: 22%;
-    }    
-
 }
+
+@media (max-width: 900px){
+    .aboutus-img1 {
+        padding-top: 35%;
+    }  
+}
+
+@media (max-width: 850px){
+    .aboutus-img1 {
+        padding-top: 45%;
+    }  
+}
+
 
 @media (max-width: 768px) {
     .aboutus-img1 {
