@@ -15,14 +15,14 @@
 <body class="overflow=hidden d-flex flex-column">
     <!-- NAVBAR -->
     <!-- <div class="overflow=hidden d-flex flex-column"> -->
-        <nav class="navbar fixed-top navbar-expand-md navbar-dark justify-content-end align-items-end text-orange fst-italic">
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark justify-content-end align-items-end fst-italic">
             <div class="container">
                 <!-- Logo -->
                 <img src="Images/title.png" width="vw-100" height="50px">
                 <!-- <a class="navbar-brand fs-2 fw-bold" style="color: #ff702a;" href="#">Cloud's Diner</a> -->
 
                 <!-- Toggle Button -->
-                <button class="navbar-toggler shadow-none border-0"         type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <button class="navbar-toggler shadow-none border-0"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -37,23 +37,26 @@
 
           <!-- Sidebar Body -->
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content-end align-items-center fs-6 flex-grow-1 pe-3">
               <li class="nav-item mx-2">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-links" href="index.html">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="aboutus.html">About Us</a>
+                <a class="nav-links" href="aboutus.html">About Us</a>
               </li>
               <li class="nav-item mx-2">
-                  <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                  <a class="nav-links active" aria-current="page" href="menu.html">Menu</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="contact.html">Contacts</a>
-              </li> 
-              <!-- <li class="nav-item mx-2">
-                  <a class="nav-link active" aria-current="page" href="orderonline2.html">Order Online</a>
-              </li> -->
-            </ul>              
+                <a class="nav-links" href="contact.html">Contacts</a>
+              </li>
+              <li class="auth-item mobile-only">
+                <a href="login-signup.html" class="login">Login/Sign up</a>
+              </li>
+              <!-- <li class="auth-item mobile-only"><a href="Signup.html" class="signup">Sign Up</a></li>       -->
+              <li class="auth-links desktop-only d-flex fs-6">
+                <a class="login" href="login-signup.html">Login/Sign up</a>
+              </li>               
           </div>
         </div>
       </div>
@@ -63,342 +66,374 @@
     
 
     <!-- Menu -->
-    <img class="img-menu" src="Images/menu2.png">
-    <div class="menu d-flex flex-column">
-    <!-- <div class="menu"> -->
-        <div class="category">
-            <h4>Steamed Dim Sum</h4>
-        </div>
-        <div class="flexbox-container-1 d-flex align-items-center"> 
-            <div class="flex-item">   
-            <!-- <div class="food-items">           -->
-                <img src="Images/Steamed/d1.avif">
-                <h5>Pork, Shrimp, & Peanut Dumplings</h5>
-                <h5>$5.95</h5>
-                <button class="cart-btn">Add To Cart</button>                                     
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Steamed/d2.avif">
-                <h5>Shrimp & Watercress Dumplings</h5>
-                <h5>$6.50</h5>
-                <button class="cart-btn">Add To Cart</button>    
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Steamed/d3.avif">
-                <h5>Shrimp, Crab, & Spinach Dumplings</h5>                
-                <h5>$8.25</h5>
-                <button class="cart-btn">Add To Cart</button>                 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Steamed/d4.avif">              
-                <h5>Chicken Buns</h5>    
-                <p>Served in 3 pieces.</p>                                              
-                <h5> $5.95</h5>                               
-                <button class="cart-btn">Add To Cart</button> 
-            </div>         
-            <div class="flex-item">                                 
-                <img src="Images/Steamed/d5.avif">
-                <h5>Shrimp Siu Ma</h5>      
-                <h5>$8.25</h5>     
-                <button class="cart-btn">Add To Cart</button>  
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Steamed/d6.avif">
-                <h5>Har Gow Shrimp Dumplings</h5>
-                <p>Served with 4 pieces.</p>           
-                <h5>$6.50</h5>
-                <button class="cart-btn">Add To Cart</button>             
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Steamed/d7.avif">
-                <h5>Chicken Feet</h5>
-                <h5>$5.95</h5>
-                <button class="cart-btn">Add To Cart</button>  
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Steamed/d8.avif">
-                <h5>Taro & Pork Dumplings</h5>
-                <p>Served in 3 pieces.</p>
-                <h5>$5.95</h5>
-                <button class="cart-btn">Add To Cart</button>  
-            </div>
-        </div>
+    <div class="header-img d-flex flex-column">     
+        <img class="img-menu" src="Images/menu2.png">
+    </div>   
+    <div class="nav-category d-flex flex-column">
+        <nav id="navbar-example2" class="navbar2 px-3 mb-2 justify-content-center">
+            <ul class="nav nav-pills fst-italic fs-6 justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">Steamed Dim Sum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Pan-Fried/ Fried</a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading3">Entrees</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading4">Crafted Sliders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading5">Sides</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading6">Dessert</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading7">Drinks</a>
+                </li>        
+            </ul>           
+        </nav>
+     
+    </div>   
 
-        <div class="category">
-            <h4>Pan-Fried/ Fried</h4>
-        </div>
-        <div class="flexbox-container-1">
-            <div class="flex-item">              
-                <img src="Images/Fried/f1.avif">
-                <h5>Fried Pork & Veg Dumplings</h5>               
-                <h5>$5.95</h5>
-                <button class="cart-btn">Add To Cart</button>           
+    <div data-bs-spy="scroll" data-bs-target="navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
+        <div class="menu d-flex flex-column">
+        <!-- <div class="menu"> -->
+            <div class="category">
+                <h4 id="scrollspyHeading1">Steamed Dim Sum</h4>
             </div>
-            <div class="flex-item">              
-                <img src="Images/Fried/f2.avif">
-                <h5>Bacon Fried Shrimp</h5>
-                <h5>$6.50</h5>            
-                <button class="cart-btn">Add To Cart</button> 
+            <div class="flexbox-container-1 d-flex align-items-center"> 
+                <div class="flex-item">   
+                <!-- <div class="food-items">           -->
+                    <img src="Images/Steamed/d1.avif">
+                    <h5>Pork, Shrimp, & Peanut Dumplings</h5>
+                    <h5>$5.95</h5>
+                    <button class="cart-btn">Add To Cart</button>                                     
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Steamed/d2.avif">
+                    <h5>Shrimp & Watercress Dumplings</h5>
+                    <h5>$6.50</h5>
+                    <button class="cart-btn">Add To Cart</button>    
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Steamed/d3.avif">
+                    <h5>Shrimp, Crab, & Spinach Dumplings</h5>                
+                    <h5>$8.25</h5>
+                    <button class="cart-btn">Add To Cart</button>                 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Steamed/d4.avif">              
+                    <h5>Chicken Buns</h5>    
+                    <p>Served in 3 pieces.</p>                                              
+                    <h5> $5.95</h5>                               
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>         
+                <div class="flex-item">                                 
+                    <img src="Images/Steamed/d5.avif">
+                    <h5>Shrimp Siu Ma</h5>      
+                    <h5>$8.25</h5>     
+                    <button class="cart-btn">Add To Cart</button>  
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Steamed/d6.avif">
+                    <h5>Har Gow Shrimp Dumplings</h5>
+                    <p>Served with 4 pieces.</p>           
+                    <h5>$6.50</h5>
+                    <button class="cart-btn">Add To Cart</button>             
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Steamed/d7.avif">
+                    <h5>Chicken Feet</h5>
+                    <h5>$5.95</h5>
+                    <button class="cart-btn">Add To Cart</button>  
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Steamed/d8.avif">
+                    <h5>Taro & Pork Dumplings</h5>
+                    <p>Served in 3 pieces.</p>
+                    <h5>$5.95</h5>
+                    <button class="cart-btn">Add To Cart</button>  
+                </div>
             </div>
-            <div class="flex-item">              
-                <img src="Images/Fried/f3.avif">
-                <h5>Fried Turnip Cakes</h5>
-                <h5>$5.95</h5>     
-                <button class="cart-btn">Add To Cart</button>        
+
+            <div class="category">
+                <h4 id="scrollspyHeading2">Pan-Fried/ Fried</h4>
             </div>
-            <div class="flex-item">              
-                <img src="Images/Fried/f4.avif">
-                <h5>Fried Shrimp Wontons</h5>
-                <h5>$6.50</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>                     
-        </div>          
-        <div class="category">
-            <h4>Entrees</h4>
-        </div>
-        <div class="flexbox-container-1">
-            <div class="flex-item">              
-                <img src="Images/Entrees/e1.avif">
-                <h5>Peking Pork Chops</h5>
-                <p>Served with white rice</p>
-                <h5>$15.75</h5>
-                <button class="cart-btn">Add To Cart</button> 
+            <div class="flexbox-container-1">
+                <div class="flex-item">              
+                    <img src="Images/Fried/f1.avif">
+                    <h5>Fried Pork & Veg Dumplings</h5>               
+                    <h5>$5.95</h5>
+                    <button class="cart-btn">Add To Cart</button>           
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Fried/f2.avif">
+                    <h5>Bacon Fried Shrimp</h5>
+                    <h5>$6.50</h5>            
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Fried/f3.avif">
+                    <h5>Fried Turnip Cakes</h5>
+                    <h5>$5.95</h5>     
+                    <button class="cart-btn">Add To Cart</button>        
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Fried/f4.avif">
+                    <h5>Fried Shrimp Wontons</h5>
+                    <h5>$6.50</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>                     
+            </div>          
+            <div class="category">
+                <h4 id="scrollspyHeading3">Entrees</h4>
             </div>
-            <div class="flex-item">              
-                <img src="Images/Entrees/e2.avif">
-                <h5>Sweet & Sour Pork</h5>
-                <p>Served with white rice</p>
-                <h5>$16.50</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>   
-            <div class="flex-item">              
-                <img src="Images/Entrees/e3.avif">
-                <h5>Teriyaki Short Ribs</h5>
-                <p>Served with white rice</p>
-                <h5>$20.00</h5>
-                <button class="cart-btn">Add To Cart</button> 
+            <div class="flexbox-container-1">
+                <div class="flex-item">              
+                    <img src="Images/Entrees/e1.avif">
+                    <h5>Peking Pork Chops</h5>
+                    <p>Served with white rice</p>
+                    <h5>$15.75</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Entrees/e2.avif">
+                    <h5>Sweet & Sour Pork</h5>
+                    <p>Served with white rice</p>
+                    <h5>$16.50</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>   
+                <div class="flex-item">              
+                    <img src="Images/Entrees/e3.avif">
+                    <h5>Teriyaki Short Ribs</h5>
+                    <p>Served with white rice</p>
+                    <h5>$20.00</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item ">              
+                    <img src="Images/Entrees/e4.avif">
+                    <h5>Pepper Steak</h5>
+                    <p>Served with white rice</p>
+                    <h5>$18.00</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>                      
+                <div class="flex-item">              
+                    <img src="Images/Entrees/e5.avif">
+                    <h5>Crispy Chicken (Half)</h5>
+                    <p>Served with white rice</p>
+                    <h5>$18.00</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Entrees/e6.avif">
+                    <h5>General Tso's Chicken</h5>
+                    <p>Served with white rice</p>   
+                    <h5>$17.00</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>   
+                <div class="flex-item">              
+                    <img src="Images/Entrees/e7.avif">
+                    <h5>Young Chow Fried Rice</h5>
+                    <h5>$12.00</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Entrees/e8.avif">
+                    <h5>Traditional Fried Rice</h5>
+                    <h5>$9.00</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>                                                
+            </div> 
+            <div class="category">
+                <h4 id="scrollspyHeading4">Crafted Sliders</h4>
             </div>
-            <div class="flex-item ">              
-                <img src="Images/Entrees/e4.avif">
-                <h5>Pepper Steak</h5>
-                <p>Served with white rice</p>
-                <h5>$18.00</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>                      
-            <div class="flex-item">              
-                <img src="Images/Entrees/e5.avif">
-                <h5>Crispy Chicken (Half)</h5>
-                <p>Served with white rice</p>
-                <h5>$18.00</h5>
-                <button class="cart-btn">Add To Cart</button> 
+            <div class="flexbox-container-1">
+                <div class="flex-item">              
+                    <img src="Images/Sliders/s1.webp">
+                    <h5>Original Savvy</h5>
+                    <p>Angus beef, American cheese, grilled onion, pickles, ketchup and mustard</p>          
+                    <h5>$3.99</h5>  
+                    <button class="cart-btn">Add To Cart</button>             
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Sliders/s2.webp">
+                    <h5>Big Signature</h5>
+                    <p>2 angus beef patties, American cheese, lettuce, grilled onion and boom sauce</p>
+                    <h5>$5.49</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Sliders/s3.webp">
+                    <h5>Classic Angus Beef</h5>
+                    <p>Angus beef, American cheese, tomato, pickles, lettuce, mayo and ketchup</p>
+                    <h5>$3.99</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Sliders/s4.webp">
+                    <h5>Boomin' Chicken</h5>
+                    <p>Fried chicken, pickles, lettuce and boom sauce</p>
+                    <h5>$3.99</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Sliders/s5.webp">
+                    <h5>Spicy Falafel</h5>
+                    <p>Falafel, tomato, hot giardiniera mix, lettuce and boom sauce</p> 
+                    <h5>$3.99</h5>
+                    <button class="cart-btn">Add To Cart</button>     
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Sliders/s6.webp">
+                    <h5>Steakhouse Ribeye</h5>
+                    <p>Rib-eye steak, provolone cheese, fried onions, sautéed mushrooms and a1 sauce</p>
+                    <h5>$4.99</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Sliders/s7.webp">
+                    <h5>The Hangover</h5>
+                    <p>Angus beef, maple-pepper bacon, fried egg American Cheese and boom sauce</p>
+                    <h5>$6.97</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Sliders/s8.webp">
+                    <h5>Famous Fried Chicken</h5>
+                    <p>Fried chicken, pickles, lettuce and mayo</p>
+                    <h5>$3.99</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+            </div>                  
+            <div class="category">
+                <h4 id="scrollspyHeading5">Sides</h4>
             </div>
-            <div class="flex-item">              
-                <img src="Images/Entrees/e6.avif">
-                <h5>General Tso's Chicken</h5>
-                <p>Served with white rice</p>   
-                <h5>$17.00</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>   
-            <div class="flex-item">              
-                <img src="Images/Entrees/e7.avif">
-                <h5>Young Chow Fried Rice</h5>
-                <h5>$12.00</h5>
-                <button class="cart-btn">Add To Cart</button> 
+            <div class="flexbox-container-1">
+                <div class="flex-item">              
+                    <img src="Images/Sides/s1.webp">
+                    <h5>Fries</h5>
+                    <p>Size: small, large (+1.5). Choice of seasoning: house, cajun, or lemon pepper</p>
+                    <h5>$3.49</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Sides/s2.webp">
+                    <h5>Onion Rings</h5>
+                    <p>Served with Boom Sauce or Ranch</p>
+                    <h5>$5.99</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Sides/s3.webp">
+                    <h5>Extra Sauce</h5>
+                    <p>Choice of savvy sauce, buffalo, ranch, bbq, honey mustard, boom sauce</p>
+                    <h5>$0.49</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Sides/s4.webp">
+                    <h5>Cheesy Curds</h5>
+                    <p>Served with Boom Sauce or Ranch</p>
+                    <h5>$5.99</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+            </div>        
+            <div class="category">
+                <h4 id="scrollspyHeading6">Dessert</h4>
             </div>
-            <div class="flex-item">              
-                <img src="Images/Entrees/e8.avif">
-                <h5>Traditional Fried Rice</h5>
-                <h5>$9.00</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>                                                
-        </div> 
-        <div class="category">
-            <h4>Crafted Sliders</h4>
-        </div>
-        <div class="flexbox-container-1">
-            <div class="flex-item">              
-                <img src="Images/Sliders/s1.webp">
-                <h5>Original Savvy</h5>
-                <p>Angus beef, American cheese, grilled onion, pickles, ketchup and mustard</p>          
-                <h5>$3.99</h5>  
-                <button class="cart-btn">Add To Cart</button>             
+            <div class="flexbox-container-1">
+                <div class="flex-item">              
+                    <img src="Images/Dessert/d1.avif">
+                    <h5>Almond Tofu</h5>
+                    <h5>$4.95</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Dessert/d2.avif">
+                    <h5>Fried Sesame Balls</h5>
+                    <p>Served 3 pieces.</p>
+                    <h5>$2.95</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Dessert/d3.avif">
+                    <h5>Durian Pastry Puffs</h5>
+                    <p>Served 3 pieces.</p>
+                    <h5>$5.95</h5> 
+                    <button class="cart-btn">Add To Cart</button>              
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Dessert/d4.avif">
+                    <h5>Egg Tarts</h5>
+                    <p>Served 3 pieces.</p>
+                    <h5>$5.95</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+            </div>        
+            <div class="category">
+                <h4 id="scrollspyHeading7">Drinks</h4>
             </div>
-            <div class="flex-item">              
-                <img src="Images/Sliders/s2.webp">
-                <h5>Big Signature</h5>
-                <p>2 angus beef patties, American cheese, lettuce, grilled onion and boom sauce</p>
-                <h5>$5.49</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Sliders/s3.webp">
-                <h5>Classic Angus Beef</h5>
-                <p>Angus beef, American cheese, tomato, pickles, lettuce, mayo and ketchup</p>
-                <h5>$3.99</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Sliders/s4.webp">
-                <h5>Boomin' Chicken</h5>
-                <p>Fried chicken, pickles, lettuce and boom sauce</p>
-                <h5>$3.99</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Sliders/s5.webp">
-                <h5>Spicy Falafel</h5>
-                <p>Falafel, tomato, hot giardiniera mix, lettuce and boom sauce</p> 
-                <h5>$3.99</h5>
-                <button class="cart-btn">Add To Cart</button>     
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Sliders/s6.webp">
-                <h5>Steakhouse Ribeye</h5>
-                <p>Rib-eye steak, provolone cheese, fried onions, sautéed mushrooms and a1 sauce</p>
-                <h5>$4.99</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Sliders/s7.webp">
-                <h5>The Hangover</h5>
-                <p>Angus beef, maple-pepper bacon, fried egg American Cheese and boom sauce</p>
-                <h5>$6.97</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Sliders/s8.webp">
-                <h5>Famous Fried Chicken</h5>
-                <p>Fried chicken, pickles, lettuce and mayo</p>
-                <h5>$3.99</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-        </div>                  
-        <div class="category">
-            <h4>Sides</h4>
-        </div>
-        <div class="flexbox-container-1">
-            <div class="flex-item">              
-                <img src="Images/Sides/s1.webp">
-                <h5>Fries</h5>
-                <p>Size: small, large (+1.5). Choice of seasoning: house, cajun, or lemon pepper</p>
-                <h5>$3.49</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Sides/s2.webp">
-                <h5>Onion Rings</h5>
-                <p>Served with Boom Sauce or Ranch</p>
-                <h5>$5.99</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Sides/s3.webp">
-                <h5>Extra Sauce</h5>
-                <p>Choice of savvy sauce, buffalo, ranch, bbq, honey mustard, boom sauce</p>
-                <h5>$0.49</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Sides/s4.webp">
-                <h5>Cheesy Curds</h5>
-                <p>Served with Boom Sauce or Ranch</p>
-                <h5>$5.99</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-        </div>        
-        <div class="category">
-            <h4>Dessert</h4>
-        </div>
-        <div class="flexbox-container-1">
-            <div class="flex-item">              
-                <img src="Images/Dessert/d1.avif">
-                <h5>Almond Tofu</h5>
-                <h5>$4.95</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Dessert/d2.avif">
-                <h5>Fried Sesame Balls</h5>
-                <p>Served 3 pieces.</p>
-                <h5>$2.95</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Dessert/d3.avif">
-                <h5>Durian Pastry Puffs</h5>
-                <p>Served 3 pieces.</p>
-                <h5>$5.95</h5> 
-                <button class="cart-btn">Add To Cart</button>              
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Dessert/d4.avif">
-                <h5>Egg Tarts</h5>
-                <p>Served 3 pieces.</p>
-                <h5>$5.95</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-        </div>        
-        <div class="category">
-            <h4>Drinks</h4>
-        </div>
-        <div class="flexbox-container-1">
-            <div class="flex-item">              
-                <img src="Images/Drinks/coke.avif">
-                <h5>Coke Can</h5>
-                <p>12 oz</p>
-                <h5>$2.50</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item Item-1">              
-                <img src="Images/Drinks/diet coke.avif">
-                <h5>Diet Coke Can</h5>
-                <p>Regular</p>
-                <h5>$2.50</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Drinks/sprite.avif">
-                <h5>Sprite Can</h5>
-                <p>Regular</p>
-                <h5>$2.50</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Drinks/dr pepper.avif">
-                <h5>Dr. Pepper Can</h5>
-                <p>Regular</p>
-                <h5>$2.50</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Drinks/sweet tea.avif">
-                <h5>Sweet Tea Lemonade</h5>
-                <p>Regular</p>
-                <h5>$2.50</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Drinks/unsweet.avif">
-                <h5>Unsweetened Tea Lemonade</h5>
-                <p>Regular</p>
-                <h5>$2.50</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>
-            <div class="flex-item">              
-                <img src="Images/Drinks/frozen.avif">
-                <h5>Frozen Fanta Blue Raspberry</h5>
-                <p>Regular</p>
-                <h5>$3.00</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>       
-            <div class="flex-item">              
-                <img src="Images/Drinks/punch.avif">
-                <h5>Frozen Hawaiian Punch</h5>
-                <p>Regular</p>            
-                <h5>$3.00</h5>
-                <button class="cart-btn">Add To Cart</button> 
-            </div>            
-        </div>    
+            <div class="flexbox-container-1">
+                <div class="flex-item">              
+                    <img src="Images/Drinks/coke.avif">
+                    <h5>Coke Can</h5>
+                    <p>12 oz</p>
+                    <h5>$2.50</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item Item-1">              
+                    <img src="Images/Drinks/diet coke.avif">
+                    <h5>Diet Coke Can</h5>
+                    <p>Regular</p>
+                    <h5>$2.50</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Drinks/sprite.avif">
+                    <h5>Sprite Can</h5>
+                    <p>Regular</p>
+                    <h5>$2.50</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Drinks/dr pepper.avif">
+                    <h5>Dr. Pepper Can</h5>
+                    <p>Regular</p>
+                    <h5>$2.50</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Drinks/sweet tea.avif">
+                    <h5>Sweet Tea Lemonade</h5>
+                    <p>Regular</p>
+                    <h5>$2.50</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Drinks/unsweet.avif">
+                    <h5>Unsweetened Tea Lemonade</h5>
+                    <p>Regular</p>
+                    <h5>$2.50</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>
+                <div class="flex-item">              
+                    <img src="Images/Drinks/frozen.avif">
+                    <h5>Frozen Fanta Blue Raspberry</h5>
+                    <p>Regular</p>
+                    <h5>$3.00</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>       
+                <div class="flex-item">              
+                    <img src="Images/Drinks/punch.avif">
+                    <h5>Frozen Hawaiian Punch</h5>
+                    <p>Regular</p>            
+                    <h5>$3.00</h5>
+                    <button class="cart-btn">Add To Cart</button> 
+                </div>            
+            </div>    
     </div>
 
     
